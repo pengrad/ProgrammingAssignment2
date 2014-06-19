@@ -13,7 +13,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## COMMENT Return a matrix that is the inverse of 'x'
+## Return a matrix that is the inverse of 'x'
+## Return cached value if it is, otherwise calculate it, cache and return
 
 cacheSolve <- function(x, ...) {        
   s <- x$getsolve()
